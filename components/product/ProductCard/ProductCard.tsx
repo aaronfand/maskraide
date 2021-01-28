@@ -68,9 +68,8 @@ const ProductCard: FC<Props> = ({
             <div className="flex flex-row justify-between box-border w-full z-20 absolute">
               <div className="absolute top-0 left-0 pr-16 max-w-full">
                 <h3 className={s.productTitle}>
-                  <span>{p.name}</span>
+                  <span>{p.name} {price}</span>
                 </h3>
-                <span className={s.productPrice}>{price}</span>
               </div>
               <WishlistButton
                 className={s.wishlistButton}

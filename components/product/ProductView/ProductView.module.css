@@ -47,7 +47,7 @@
   @screen lg {
     & .name,
     & .price {
-      @apply bg-violet-light text-white;
+      @apply bg-purple-400 bg-opacity-50 text-white ;
     }
   }
 }
@@ -74,7 +74,7 @@
 }
 
 .img {
-  @apply w-full h-auto max-h-full object-cover;
+  @apply w-full h-auto max-h-full object-scale-down;
 }
 
 .button {

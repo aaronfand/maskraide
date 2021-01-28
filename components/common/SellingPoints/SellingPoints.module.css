@@ -1,0 +1,10 @@
+
+
+.heading {
+  @apply text-2xl leading-10 font-extrabold text-white ;
+}
+
+
+.highlightedText {
+  @apply text-purple-500 font-bold italic;
+}

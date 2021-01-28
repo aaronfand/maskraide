@@ -1,7 +1,7 @@
 import { FC, useState, useEffect } from 'react'
 import Link from 'next/link'
 import s from './Navbar.module.css'
-import { Logo, Container } from '@components/ui'
+import { Container } from '@components/ui'
 import { Searchbar, UserNav } from '@components/common'
 import cn from 'classnames'
 import throttle from 'lodash.throttle'
@@ -30,20 +30,13 @@ const Navbar: FC = () => {
           <div className="flex items-center flex-1">
             <Link href="/">
               <a className={s.logo} aria-label="Logo">
-                <Logo />
+              <img
+                src="/maskraide.png"
+                alt="Mask-R-Aide"
+                className={s.productImage}
+              />
               </a>
             </Link>
-            <nav className="hidden ml-6 space-x-4 lg:block">
-              <Link href="/search">
-                <a className={s.link}>All</a>
-              </Link>
-              <Link href="/search?q=clothes">
-                <a className={s.link}>Clothes</a>
-              </Link>
-              <Link href="/search?q=accessories">
-                <a className={s.link}>Accessories</a>
-              </Link>
-            </nav>
           </div>
 
           <div className="justify-center flex-1 hidden lg:flex">

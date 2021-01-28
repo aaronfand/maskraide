@@ -6,11 +6,11 @@
 
   &:hover {
     & .squareBg:before {
-      transform: scale(0.98);
+      transform: scale(0.4);
     }
 
     & .productImage {
-      transform: scale(1.2625);
+      transform: scale(0.7);
     }
 
     & .productTitle > span,
@@ -101,7 +101,7 @@
 
 .productTitle {
   @apply pt-0 max-w-full w-full leading-extra-loose;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 0.4px;
 
   & span {
@@ -132,5 +132,5 @@
 }
 
 .productImage {
-  @apply transform transition-transform duration-500 object-cover scale-120;
+  @apply transform transition-transform duration-500 object-cover scale-50;
 }
