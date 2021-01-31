@@ -31,7 +31,9 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <a className="flex flex-initial items-center font-bold md:mr-24">
                   <span>Mask-R-Aide, LLC</span>
                 </a>
-                <p> maskraidellc@gmail.com </p>
+                <p>maskraidellc@gmail.com</p>
+                <p className="flex flex-row text-center"><a href="https://www.facebook.com/maskraidellc/">follow us on <img src="/fb.jpg" className={s.fb}/></a></p>
+                <p className="flex flex-row text-center"><a href="https://www.instagram.com/maskraidellc/">follow us on <img src="/instagram.jpg" className={s.fb}/></a></p>
               </div>
             </Link>
           </div>

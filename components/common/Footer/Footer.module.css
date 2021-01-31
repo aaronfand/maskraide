@@ -7,3 +7,8 @@
     @apply scale-110;
   }
 }
+
+.fb {
+  width: 40px;
+  height: 40px;
+}

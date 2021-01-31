@@ -6,5 +6,14 @@
 
 
 .highlightedText {
-  @apply text-purple-500 font-bold italic;
+  @apply text-purple-300 font-bold italic;
+}
+
+.sellingPoints {
+  @apply bg-purple-900;
+}
+
+.pointsTextContainer {
+  display: inline;
+  padding-bottom: 2em;
 }

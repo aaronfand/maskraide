@@ -1,6 +1,6 @@
 {
   "title": "Mask-R-Aide Storefront",
-  "titleTemplate": "%s - ACME Storefront",
+  "titleTemplate": "%s - Mask-R-Aide Storefront",
   "description": "Mask-R-Aide Storefront online store",
   "openGraph": {
     "type": "website",
