@@ -93,15 +93,7 @@ h1 {
 	background-color: purple;
 	padding: 10px 10px 10px 10px;
   }
-  
-  #header-element {
-	left: 0px;
-	position: relative;
-	background-color: purple;
-	animation: slide-in 0.5s forwards;
-	animation-timing-function: ease;
-	-webkit-animation: slide-in 0.5s forwards;
-  }
+
   .header-text {
 	color: white;
 	font-size: larger;
@@ -140,16 +132,48 @@ h1 {
 	margin: 10px 10px 10px 10px;
 	background-color: rgba(255, 255, 255, 80%);
   }
-  
-  .article {
-	margin: 10px 10px 10px 10px;
-	background-color: rgba(255, 255, 255, 80%);
-	width: 250px;
-  }
-  @media only screen and (max-width: 800px) {
+	.article-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 20px;
+		width: 100%;
+		align-items: center; /*Vertical align*/
+		justify-content: center; /*horizontal align*/
+	}
+	.article {
+		margin: 10px 10px 10px 10px;
+		background-color: rgba(255, 255, 255, 80%);
+		width: 300px;
+	}
+	.article-image {
+		left: 0px;
+		position: relative;
+		background-color: purple;
+		animation: slide-in 0.5s forwards;
+		animation-timing-function: ease;
+		-webkit-animation: slide-in 0.5s forwards;
+		width: 100%;
+	}
+	.article-title {
+		font-size: 20px;
+	}
+	.article-body {
+		font-size: 16px;
+	}
+
+  @media only screen and (max-width: 600px) {
 	.article {
 	  margin-left: 0px ;
 	  margin-right: 0px ;
+	  width: 150px;
+	  height: 250px;
+	  flex: none;
+	}
+	.article-title {
+		font-size: 12px;
+	}
+	.article-body {
+		font-size: 10px;
 	}
   }
   
@@ -207,11 +231,12 @@ h1 {
 	cursor: pointer;
 	cursor: hand;
 	flex-wrap: wrap;
+	gap: 10px 20px;
   }
 
-  .gallery-item {
+  .gallery-item img {
 	width: 250px;
-	height: 500px;
+	height: '*';
 	margin: auto;
   }
   
